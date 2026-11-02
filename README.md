@@ -49,7 +49,7 @@ Contém o notebook e os arquivos relacionados ao **modelo selecionado como solu�
 
 Contém os arquivos notebook de todos os modelos experimentados para o ep2, que não foram selecionados como o melhor modelo.
 
-### Limpeza.ipynb`
+### `Limpeza.ipynb`
 
 Pré-processamento dos textos de treino e teste: remoção de URLs, de menções e hashtags, de caracteres não alfanuméricos, de espaços em excesso e conversão para letras minúsculas
 
