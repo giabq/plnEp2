@@ -1,0 +1,10 @@
+# Ambiente virtual Python (cada pessoa cria o seu localmente)
+.venv/
+
+# Modelo treinado (~90 MB, pode ser regerado pelo notebook)
+*.joblib
+
+# Arquivos temporários do Python/Jupyter
+__pycache__/
+.ipynb_checkpoints/
+
