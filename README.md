@@ -29,6 +29,9 @@ plnEp2/
 ├── modelo_ep1/
 │   └── ...
 │
+├── modelo_testados/
+│   └── ...
+│
 └── README.md
 ```
 
@@ -40,6 +43,10 @@ Contém os conjuntos de dados utilizados no projeto, incluindo os dados de trein
 ### `modelo_ep1/`
 
 Contém o notebook e os arquivos relacionados ao **modelo selecionado como solução final no EP1**.
+
+### `modelos_testados/`
+
+Contém os arquivos notebook de todos os modelos experimentados para o ep2, que não foram selecionados como o melhor modelo.
 
 <!-- --- -->
 
