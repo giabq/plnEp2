@@ -17,23 +17,16 @@ Durante o desenvolvimento, foram exploradas diferentes abordagens de processamen
 ## Estrutura do repositório
 
 ```text
-plnEp1/
+plnEp2/
 ├── data/
 │   ├── train.csv
 │   ├── train_noDuplicates.csv
 │   ├── train_noSameClassDuplicates.csv
 │   └── test1.xlsx
+│   └── test2.xlsx
+│   └── test1-rotulado-para-teste-estatistico.xlsx
 │
-├── baseline/
-│   └── ...
-│
-├── modelos_testados/
-│   └── ...
-│
-├── modelo_final/
-│   └── ...
-│
-├── resultados/
+├── modelo_ep1/
 │   └── ...
 │
 └── README.md
@@ -43,37 +36,10 @@ plnEp1/
 
 Contém os conjuntos de dados utilizados no projeto, incluindo os dados de treinamento originais, os dados sem duplicatas preparados pelo grupo e o conjunto de teste fornecido para classificação.
 
-### `baseline/`
 
-Contém os notebooks e arquivos relacionados aos modelos utilizados como **baseline** (Dummy Classifier e TF-IDF + Regressão Logística) para comparação.
+### `modelo_ep1/`
 
-### `modelos_testados/`
-
-Contém os notebooks das diferentes abordagens exploradas durante o desenvolvimento do projeto.
-
-### `modelo_final/`
-
-Contém o notebook e os arquivos relacionados ao **modelo selecionado como solução final**.
-
-### `resultados/`
-
-Contém os resultados gerados pelo modelo final, incluindo o conjunto de teste rotulado após a classificação.
-
-<!-- --- -->
-
-## Modelo final
-
-O modelo final selecionado para a classificação das respostas foi:
-
-**TF-IDF + sublinear_tf + Regressão Logística**
-
-O treinamento, a avaliação e a aplicação do modelo podem ser encontrados no notebook disponível em: `modelo_final/`
-
-Após o treinamento e a avaliação, o modelo foi utilizado para classificar as respostas presentes no conjunto `test1.xlsx`.
-
-O arquivo resultante está disponível em: `resultados/test1_rotulado.xlsx`
-
-<!-- Os resultados detalhados dos experimentos e a justificativa para a escolha do modelo final estão apresentados no relatório do projeto. -->
+Contém o notebook e os arquivos relacionados ao **modelo selecionado como solução final no EP1**.
 
 <!-- --- -->
 
