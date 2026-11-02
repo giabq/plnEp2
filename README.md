@@ -25,14 +25,15 @@ plnEp2/
 │   └── test1.xlsx
 │   └── test2.xlsx
 │   └── test1-rotulado-para-teste-estatistico.xlsx
-│
 ├── modelo_ep1/
 │   └── ...
-│
-├── modelo_testados/
+├── modelos_testados/
 │   └── ...
-│
+└── Limpeza.ipynb
 └── README.md
+└── ...
+
+
 ```
 
 ### `data/`
@@ -47,6 +48,10 @@ Contém o notebook e os arquivos relacionados ao **modelo selecionado como solu�
 ### `modelos_testados/`
 
 Contém os arquivos notebook de todos os modelos experimentados para o ep2, que não foram selecionados como o melhor modelo.
+
+### Limpeza.ipynb`
+
+Pré-processamento dos textos de treino e teste: remoção de URLs, de menções e hashtags, de caracteres não alfanuméricos, de espaços em excesso e conversão para letras minúsculas
 
 <!-- --- -->
 
