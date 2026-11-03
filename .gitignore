@@ -3,6 +3,8 @@
 
 # Modelo treinado (~90 MB, pode ser regerado pelo notebook)
 *.joblib
+*.npz
+*.npy
 
 # Arquivos temporários do Python/Jupyter
 __pycache__/
