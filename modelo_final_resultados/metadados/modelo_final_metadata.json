@@ -1,0 +1,72 @@
+{
+    "project": "EP2 - Introdução ao Processamento de Língua Natural",
+    "final_architecture": "Stacking",
+    "base_models": [
+        {
+            "name": "TF-IDF Word + Logistic Regression",
+            "vectorizer": {
+                "analyzer": "word",
+                "ngram_range": [
+                    1,
+                    3
+                ],
+                "sublinear_tf": true,
+                "lowercase": true
+            },
+            "classifier": {
+                "C": 1.0,
+                "class_weight": "balanced",
+                "max_iter": 2000
+            }
+        },
+        {
+            "name": "Qwen3-Embedding-0.6B + Logistic Regression",
+            "model_id": "Qwen/Qwen3-Embedding-0.6B",
+            "embedding_dimension": 1024,
+            "classifier": {
+                "C": 1.0,
+                "class_weight": "balanced",
+                "max_iter": 2000
+            }
+        },
+        {
+            "name": "Qwen3-Embedding-4B + Logistic Regression",
+            "model_id": "Qwen/Qwen3-Embedding-4B",
+            "embedding_dimension": 2560,
+            "classifier": {
+                "C": 1.0,
+                "class_weight": "balanced",
+                "max_iter": 2000
+            }
+        },
+        {
+            "name": "BERTimbau Base Head-Tail original",
+            "model_id": "neuralmind/bert-base-portuguese-cased",
+            "learning_rate": 3e-05,
+            "epochs": 3,
+            "weight_decay": 0.01,
+            "max_length": 256,
+            "head_tokens": 127,
+            "tail_tokens": 127
+        }
+    ],
+    "meta_classifier": {
+        "name": "LogisticRegression",
+        "C": 1.0,
+        "class_weight": "balanced",
+        "max_iter": 2000,
+        "input_features": 12,
+        "feature_order": [
+            "TFIDF_Word",
+            "Qwen_0.6B",
+            "Qwen_4B",
+            "BERT_HeadTail"
+        ]
+    },
+    "classes": [
+        "c1",
+        "c234",
+        "c5"
+    ],
+    "test2_predictions": "Não incluídas. Serão geradas por outro integrante."
+}
